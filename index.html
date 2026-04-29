@@ -173,7 +173,7 @@
 </header>
 
 <!-- HERO -->
-<section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+<section class="relative min-h-screen flex items-center pt-20 overflow-hidden z-10">
 <div class="absolute inset-0"><img src="https://images.unsplash.com/photo-1471341971476-ae15ff5dd4ea?w=1920&q=80" alt="SNAPTIFY cho thuê camera Hà Nội" class="w-full h-full object-cover opacity-[.08]"></div>
 <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_30%_20%,rgba(37,99,235,.12),transparent_60%)]"></div>
 <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_70%_80%,rgba(56,189,248,.06),transparent_50%)]"></div>
@@ -210,7 +210,7 @@
 </section>
 
 <!-- SẢN PHẨM — Tab Showcase -->
-<section id="sp" class="py-24 relative bg-dk">
+<section id="sp" class="py-24 relative bg-dk z-10">
 <div class="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-pr/20 to-transparent"></div>
 <div class="max-w-7xl mx-auto px-4 sm:px-6">
 <div class="text-center mb-12 rv"><p class="text-pr text-sm font-bold uppercase tracking-widest mb-3">Thiết bị cho thuê</p><h2 class="text-3xl md:text-5xl font-black mb-5">Sản phẩm <span class="gr">chính hãng</span></h2><p class="text-gray-400 max-w-xl mx-auto text-lg">Bảo dưỡng định kỳ, sẵn sàng giao ngay tại Hà Nội</p></div>
@@ -287,7 +287,7 @@
 </div></section>
 
 <!-- GALLERY -->
-<section class="py-20 bg-dk2/50 relative overflow-hidden">
+<section class="py-20 bg-dk2/50 relative overflow-hidden z-10">
 <div class="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-pr/20 to-transparent"></div>
 <div class="max-w-7xl mx-auto px-4 sm:px-6">
 <div class="text-center mb-12 rv"><p class="text-pr text-sm font-bold uppercase tracking-widest mb-3">Gallery</p><h2 class="text-2xl md:text-4xl font-black">Thiết bị <span class="gr">thực tế</span> tại SNAPTIFY</h2></div>
@@ -301,7 +301,7 @@
 </div></div></section>
 
 <!-- BẢNG GIÁ -->
-<section id="bg" class="py-24 relative bg-dk">
+<section id="bg" class="py-24 relative bg-dk z-10">
 <div class="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-pr/20 to-transparent"></div>
 <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-pr/[.04] rounded-full blur-[120px]"></div>
 <div class="max-w-4xl mx-auto px-4 sm:px-6 relative z-10">
@@ -357,7 +357,7 @@
 </div></section>
 
 <!-- QUY TRÌNH -->
-<section id="qt" class="py-24 bg-dk2/50 relative overflow-hidden">
+<section id="qt" class="py-24 bg-dk2/50 relative overflow-hidden z-10">
 <div class="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-pr/20 to-transparent"></div>
 <div class="max-w-5xl mx-auto px-4 sm:px-6 relative z-10">
 <div class="text-center mb-16 rv"><p class="text-pr text-sm font-bold uppercase tracking-widest mb-3">Cách thuê</p><h2 class="text-3xl md:text-5xl font-black mb-5">Quy trình <span class="gr">đơn giản</span></h2><p class="text-gray-400 text-lg">Chỉ 4 bước, nhận máy trong ngày</p></div>
@@ -369,7 +369,7 @@
 </div></div></section>
 
 <!-- ĐÁNH GIÁ -->
-<section id="dg" class="py-24 relative bg-dk">
+<section id="dg" class="py-24 relative bg-dk z-10">
 <div class="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-pr/20 to-transparent"></div>
 <div class="max-w-7xl mx-auto px-4 sm:px-6">
 <div class="text-center mb-16 rv"><p class="text-pr text-sm font-bold uppercase tracking-widest mb-3">Feedback</p><h2 class="text-3xl md:text-5xl font-black mb-5">Khách hàng <span class="gr">nói gì?</span></h2><p class="text-gray-400 text-lg">128+ khách hàng đã tin tưởng SNAPTIFY</p></div>
@@ -380,24 +380,26 @@
 </div></div></section>
 
 <!-- FORM -->
-<section id="dt" class="py-24 bg-dk2/50 relative overflow-hidden">
+<section id="dt" class="py-24 bg-dk2/50 relative overflow-hidden z-10">
 <div class="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-pr/20 to-transparent"></div>
 <div class="absolute top-1/2 right-0 w-[350px] h-[350px] bg-pr/[.04] rounded-full blur-[100px] -translate-y-1/2"></div>
 <div class="max-w-2xl mx-auto px-4 sm:px-6 relative z-10">
 <div class="text-center mb-14 rv"><p class="text-pr text-sm font-bold uppercase tracking-widest mb-3">Đặt thuê</p><h2 class="text-3xl md:text-5xl font-black mb-5">Liên hệ <span class="gr">ngay</span></h2><p class="text-gray-400 text-lg">SNAPTIFY phản hồi trong 15 phút</p></div>
 <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="glass rounded-2xl p-7 md:p-10 space-y-6 rv">
-<div><label for="name" class="block text-sm font-semibold text-gray-300 mb-2">Họ và tên <span class="text-red-400">*</span></label><input type="text" id="name" name="name" required placeholder="Nguyễn Văn A" class="w-full bg-dk border border-gray-700/50 focus:border-pr focus:ring-2 focus:ring-pr/20 rounded-xl px-5 py-3.5 text-white placeholder-gray-600 outline-none transition-all"></div>
-<div><label for="phone" class="block text-sm font-semibold text-gray-300 mb-2">Số điện thoại <span class="text-red-400">*</span></label><input type="tel" id="phone" name="phone" required placeholder="0942 783 802" class="w-full bg-dk border border-gray-700/50 focus:border-pr focus:ring-2 focus:ring-pr/20 rounded-xl px-5 py-3.5 text-white placeholder-gray-600 outline-none transition-all"></div>
+<div><label for="name" class="block text-sm font-semibold text-gray-300 mb-2">Họ và tên <span class="text-red-400">*</span></label><input type="text" id="name" name="name" required placeholder="Nguyễn Văn A" class="w-full bg-dk border border-gray-700/50 focus:border-pr focus:ring-2 focus:ring-pr/20 rounded-xl px-4 py-3 text-sm text-white placeholder-gray-600 outline-none transition-all"></div>
+<div><label for="phone" class="block text-sm font-semibold text-gray-300 mb-2">Số điện thoại <span class="text-red-400">*</span></label><input type="tel" id="phone" name="phone" required placeholder="0942 783 802" class="w-full bg-dk border border-gray-700/50 focus:border-pr focus:ring-2 focus:ring-pr/20 rounded-xl px-4 py-3 text-sm text-white placeholder-gray-600 outline-none transition-all"></div>
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-<div><label for="date" class="block text-sm font-semibold text-gray-300 mb-2">Ngày thuê <span class="text-red-400">*</span></label><input type="date" id="date" name="date" required class="w-full bg-dk border border-gray-700/50 focus:border-pr focus:ring-2 focus:ring-pr/20 rounded-xl px-5 py-3.5 text-white outline-none transition-all"></div>
-<div><label for="product" class="block text-sm font-semibold text-gray-300 mb-2">Sản phẩm <span class="text-red-400">*</span></label><select id="product" name="product" required class="w-full bg-dk border border-gray-700/50 focus:border-pr focus:ring-2 focus:ring-pr/20 rounded-xl px-5 py-3.5 text-white outline-none transition-all"><option value="">Chọn...</option><option>Pocket 3 — 1 ngày (200K)</option><option>Pocket 3 — 2 ngày (180K/ngày)</option><option>Pocket 3 — 3 ngày (160K/ngày) ⭐</option><option>Pocket 3 — 5 ngày (140K/ngày)</option><option>Pocket 3 — 7 ngày (130K/ngày)</option><option>Máy ảnh Sony/Canon</option><option>Phụ kiện</option><option>Khác</option></select></div></div>
+<div><label for="date-from" class="block text-sm font-semibold text-gray-300 mb-2">Từ ngày <span class="text-red-400">*</span></label><input type="date" id="date-from" name="date-from" required class="w-full bg-dk border border-gray-700/50 focus:border-pr focus:ring-2 focus:ring-pr/20 rounded-xl px-4 py-3 text-sm text-white outline-none transition-all"></div>
+<div><label for="date-to" class="block text-sm font-semibold text-gray-300 mb-2">Đến ngày <span class="text-red-400">*</span></label><input type="date" id="date-to" name="date-to" required class="w-full bg-dk border border-gray-700/50 focus:border-pr focus:ring-2 focus:ring-pr/20 rounded-xl px-4 py-3 text-sm text-white outline-none transition-all"></div>
+</div>
+<div><label for="product" class="block text-sm font-semibold text-gray-300 mb-2">Sản phẩm <span class="text-red-400">*</span></label><select id="product" name="product" required class="w-full bg-dk border border-gray-700/50 focus:border-pr focus:ring-2 focus:ring-pr/20 rounded-xl px-4 py-3 text-sm text-white outline-none transition-all"><option value="">Chọn sản phẩm...</option><option>DJI Pocket 3</option><option>Máy ảnh Sony / Canon</option><option>Phụ kiện quay chụp</option><option>Combo Pocket 3 + Phụ kiện</option><option>Khác (ghi ở ghi chú)</option></select></div>
 <div><label for="note" class="block text-sm font-semibold text-gray-300 mb-2">Ghi chú</label><textarea id="note" name="note" rows="3" placeholder="Cần thêm tripod, giao buổi sáng..." class="w-full bg-dk border border-gray-700/50 focus:border-pr focus:ring-2 focus:ring-pr/20 rounded-xl px-5 py-3.5 text-white placeholder-gray-600 outline-none transition-all resize-none"></textarea></div>
 <button type="submit" class="w-full bg-pr hover:bg-pr-d text-white font-bold py-4 rounded-xl text-lg transition-all gl hover:shadow-2xl hover:shadow-pr/30">📸 Gửi yêu cầu thuê</button>
 <p class="text-xs text-gray-500 text-center">Gửi form = đồng ý để SNAPTIFY liên hệ qua SĐT.</p>
 </form></div></section>
 
 <!-- FOOTER -->
-<footer class="py-16 pb-32 md:pb-16 border-t border-gray-800/50">
+<footer class="py-16 pb-32 md:pb-16 border-t border-gray-800/50 bg-dk relative z-10">
 <div class="max-w-7xl mx-auto px-4 sm:px-6">
 <div class="grid md:grid-cols-3 gap-10">
 <div><div class="flex items-center gap-2.5 mb-5"><div class="w-10 h-10 bg-pr rounded-xl flex items-center justify-center font-black text-lg">S</div><span class="text-xl font-extrabold">SNAP<span class="text-pr">TIFY</span></span></div><p class="text-sm text-gray-400 leading-relaxed mb-5">Dịch vụ cho thuê DJI Pocket 3, máy ảnh và phụ kiện quay chụp uy tín tại Hà Nội.</p><div class="flex gap-3"><a href="https://facebook.com/snaptify" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="w-10 h-10 glass hover:bg-pr/20 rounded-xl flex items-center justify-center transition-all hover:scale-110"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a><a href="https://zalo.me/0942783802" target="_blank" rel="noopener noreferrer" aria-label="Zalo" class="w-10 h-10 glass hover:bg-pr/20 rounded-xl flex items-center justify-center transition-all hover:scale-110 text-sm font-bold">Zalo</a></div></div>
@@ -420,7 +422,10 @@ function showTab(idx){document.querySelectorAll('.ptab').forEach((t,i)=>{t.class
 document.getElementById('mt').addEventListener('click',()=>document.getElementById('mm').classList.toggle('hidden'));
 document.querySelectorAll('#mm a').forEach(a=>a.addEventListener('click',()=>document.getElementById('mm').classList.add('hidden')));
 const hd=document.getElementById('hd');window.addEventListener('scroll',()=>{if(scrollY>60){hd.style.background='rgba(10,15,28,.92)';hd.style.backdropFilter='blur(16px)';hd.style.borderBottom='1px solid rgba(37,99,235,.08)'}else{hd.style.background='transparent';hd.style.backdropFilter='none';hd.style.borderBottom='none'}});
-const d=document.getElementById('date');if(d)d.min=new Date().toISOString().split('T')[0];
+const today=new Date().toISOString().split('T')[0];
+const df=document.getElementById('date-from'),dt2=document.getElementById('date-to');
+if(df){df.min=today;df.addEventListener('change',()=>{if(dt2)dt2.min=df.value})}
+if(dt2)dt2.min=today;
 document.addEventListener('mousemove',e=>{const x=(e.clientX/innerWidth-.5)*15,y=(e.clientY/innerHeight-.5)*15;document.querySelectorAll('.fl').forEach((el,i)=>{const s=(i%4+1)*.2;el.style.transform=`translateY(${Math.sin(Date.now()/1000+i)*14}px) translate(${x*s}px,${y*s}px)`})});
 
 // === LOADER DISMISS ===
