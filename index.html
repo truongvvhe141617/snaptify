@@ -110,7 +110,7 @@
 .gr{background:linear-gradient(135deg,#2563EB,#38BDF8,#818CF8);background-size:200% 200%;animation:grad 4s ease infinite;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 .cd{transition:all .4s cubic-bezier(.25,.8,.25,1)}.cd:hover{transform:translateY(-8px);box-shadow:0 30px 60px rgba(37,99,235,.2)}
 .th{cursor:pointer;border:2px solid transparent;opacity:.5;transition:all .3s}.th:hover,.th.on{border-color:#2563EB;opacity:1;transform:scale(1.05)}
-.rv{opacity:0;transform:translateY(50px);transition:all .8s cubic-bezier(.25,.8,.25,1)}.rv.v{opacity:1;transform:none}
+.rv{opacity:0;transform:translateY(30px);transition:all .6s cubic-bezier(.25,.8,.25,1)}.rv.v{opacity:1;transform:none}
 .d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}.d4{transition-delay:.4s}
 .sb{position:fixed;bottom:0;left:0;right:0;z-index:50;padding:14px 16px;background:linear-gradient(to top,rgba(10,15,28,.98),rgba(10,15,28,.8));backdrop-filter:blur(16px);border-top:1px solid rgba(37,99,235,.15)}
 #lb{position:fixed;inset:0;z-index:70;background:rgba(0,0,0,.95);backdrop-filter:blur(12px);display:none;align-items:center;justify-content:center;cursor:zoom-out}
@@ -376,8 +376,10 @@ function showTab(idx){document.querySelectorAll('.ptab').forEach((t,i)=>{t.class
 document.getElementById('mt').addEventListener('click',()=>document.getElementById('mm').classList.toggle('hidden'));
 document.querySelectorAll('#mm a').forEach(a=>a.addEventListener('click',()=>document.getElementById('mm').classList.add('hidden')));
 const hd=document.getElementById('hd');window.addEventListener('scroll',()=>{if(scrollY>60){hd.style.background='rgba(10,15,28,.92)';hd.style.backdropFilter='blur(16px)';hd.style.borderBottom='1px solid rgba(37,99,235,.08)'}else{hd.style.background='transparent';hd.style.backdropFilter='none';hd.style.borderBottom='none'}});
-const ob=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('v')}),{threshold:.08,rootMargin:'0px 0px -60px 0px'});
+const ob=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('v')}),{threshold:0.01,rootMargin:'0px 0px -20px 0px'});
 document.querySelectorAll('.rv').forEach(el=>ob.observe(el));
+// Fallback: reveal all after 3s in case observer misses
+setTimeout(()=>document.querySelectorAll('.rv:not(.v)').forEach(el=>el.classList.add('v')),3500);
 const d=document.getElementById('date');if(d)d.min=new Date().toISOString().split('T')[0];
 document.addEventListener('mousemove',e=>{const x=(e.clientX/innerWidth-.5)*15,y=(e.clientY/innerHeight-.5)*15;document.querySelectorAll('.fl').forEach((el,i)=>{const s=(i%4+1)*.2;el.style.transform=`translateY(${Math.sin(Date.now()/1000+i)*14}px) translate(${x*s}px,${y*s}px)`})});
 
