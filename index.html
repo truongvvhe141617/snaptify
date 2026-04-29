@@ -112,7 +112,7 @@
 .th{cursor:pointer;border:2px solid transparent;opacity:.5;transition:all .3s}.th:hover,.th.on{border-color:#2563EB;opacity:1;transform:scale(1.05)}
 .rv{opacity:1;transform:none;transition:all .6s cubic-bezier(.25,.8,.25,1)}.rv.v{animation:rvIn .6s ease forwards}
 @keyframes rvIn{from{opacity:.7;transform:translateY(15px)}to{opacity:1;transform:none}}
-.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}.d4{transition-delay:.4s}
+.d1{animation-delay:.1s}.d2{animation-delay:.2s}.d3{animation-delay:.3s}.d4{animation-delay:.4s}
 .sb{position:fixed;bottom:0;left:0;right:0;z-index:50;padding:14px 16px;background:linear-gradient(to top,rgba(10,15,28,.98),rgba(10,15,28,.8));backdrop-filter:blur(16px);border-top:1px solid rgba(37,99,235,.15)}
 #lb{position:fixed;inset:0;z-index:70;background:rgba(0,0,0,.95);backdrop-filter:blur(12px);display:none;align-items:center;justify-content:center;cursor:zoom-out}
 #lb.show{display:flex}#lb img{max-width:94vw;max-height:90vh;border-radius:16px;object-fit:contain;box-shadow:0 0 80px rgba(37,99,235,.3)}
@@ -305,13 +305,57 @@
 <section id="bg" class="py-24 relative">
 <div class="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-pr/20 to-transparent"></div>
 <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-pr/[.04] rounded-full blur-[120px]"></div>
-<div class="max-w-5xl mx-auto px-4 sm:px-6 relative z-10">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 relative z-10">
 <div class="text-center mb-16 rv"><p class="text-pr text-sm font-bold uppercase tracking-widest mb-3">Bảng giá</p><h2 class="text-3xl md:text-5xl font-black mb-5">Thuê <span class="gr">DJI Pocket 3</span></h2><p class="text-gray-400 text-lg">Thuê càng lâu, giá càng tốt. Miễn phí giao nhận nội thành.</p></div>
-<div class="grid md:grid-cols-3 gap-6 md:gap-5 items-start">
-<div class="cd glass rounded-2xl p-8 text-center rv d1"><div class="text-sm font-bold text-gray-400 uppercase tracking-widest mb-3">1 Ngày</div><div class="text-5xl font-black mb-1">200K</div><div class="text-gray-500 text-sm mb-7">/ ngày</div><ul class="text-sm text-gray-400 space-y-3 mb-9 text-left"><li class="flex items-center gap-2.5"><svg class="w-5 h-5 text-emerald-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Máy DJI Pocket 3</li><li class="flex items-center gap-2.5"><svg class="w-5 h-5 text-emerald-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Thẻ nhớ 64GB</li><li class="flex items-center gap-2.5"><svg class="w-5 h-5 text-emerald-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Hướng dẫn sử dụng</li></ul><a href="#dt" class="block w-full glass hover:bg-pr hover:border-pr text-white font-bold py-3.5 rounded-xl transition-all">Chọn gói</a></div>
-<div class="cd glass rounded-2xl p-8 text-center relative md:scale-[1.06] rv d2 border-2 border-pr/50 bg"><div class="absolute -top-5 left-1/2 -translate-x-1/2 bg-gradient-to-r from-pr to-blue-400 text-white text-xs font-bold px-6 py-2 rounded-full shadow-lg shadow-pr/30">⭐ BEST CHOICE</div><div class="text-sm font-bold text-pr uppercase tracking-widest mb-3">3 Ngày</div><div class="text-5xl font-black mb-1">550K</div><div class="text-gray-500 text-sm mb-1">/ 3 ngày</div><div class="text-xs text-emerald-400 font-bold mb-7">Tiết kiệm 50K so với thuê lẻ</div><ul class="text-sm text-gray-400 space-y-3 mb-9 text-left"><li class="flex items-center gap-2.5"><svg class="w-5 h-5 text-emerald-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Máy DJI Pocket 3</li><li class="flex items-center gap-2.5"><svg class="w-5 h-5 text-emerald-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Thẻ nhớ 128GB</li><li class="flex items-center gap-2.5"><svg class="w-5 h-5 text-emerald-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Pin dự phòng</li><li class="flex items-center gap-2.5"><svg class="w-5 h-5 text-emerald-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Giao nhận miễn phí</li></ul><a href="#dt" class="block w-full bg-pr hover:bg-pr-d text-white font-bold py-3.5 rounded-xl transition-all gl hover:shadow-xl hover:shadow-pr/30">Chọn gói này</a></div>
-<div class="cd glass rounded-2xl p-8 text-center rv d3"><div class="text-sm font-bold text-gray-400 uppercase tracking-widest mb-3">7 Ngày</div><div class="text-5xl font-black mb-1">1.2TR</div><div class="text-gray-500 text-sm mb-1">/ 7 ngày</div><div class="text-xs text-emerald-400 font-bold mb-7">Tiết kiệm 200K so với thuê lẻ</div><ul class="text-sm text-gray-400 space-y-3 mb-9 text-left"><li class="flex items-center gap-2.5"><svg class="w-5 h-5 text-emerald-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Máy DJI Pocket 3</li><li class="flex items-center gap-2.5"><svg class="w-5 h-5 text-emerald-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Thẻ nhớ 128GB</li><li class="flex items-center gap-2.5"><svg class="w-5 h-5 text-emerald-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Pin dự phòng x2</li><li class="flex items-center gap-2.5"><svg class="w-5 h-5 text-emerald-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Tripod + túi đựng</li></ul><a href="#dt" class="block w-full glass hover:bg-pr hover:border-pr text-white font-bold py-3.5 rounded-xl transition-all">Chọn gói</a></div>
-</div></div></section>
+
+<!-- Pricing Table -->
+<div class="glass rounded-2xl overflow-hidden">
+<table class="w-full text-left">
+<thead>
+<tr class="border-b border-white/5">
+<th class="px-5 md:px-8 py-5 text-xs font-bold text-gray-400 uppercase tracking-widest">Thời gian</th>
+<th class="px-5 md:px-8 py-5 text-xs font-bold text-gray-400 uppercase tracking-widest text-right">Giá / ngày</th>
+<th class="px-5 md:px-8 py-5 text-xs font-bold text-gray-400 uppercase tracking-widest text-right hidden sm:table-cell">Tiết kiệm</th>
+<th class="px-5 md:px-8 py-5"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="border-b border-white/5 hover:bg-white/[.02] transition-colors">
+<td class="px-5 md:px-8 py-5 font-bold text-lg">1 ngày</td>
+<td class="px-5 md:px-8 py-5 text-right"><span class="text-2xl font-black gr">200K</span><span class="text-gray-500 text-sm">/ngày</span></td>
+<td class="px-5 md:px-8 py-5 text-right hidden sm:table-cell"><span class="text-gray-600 text-sm">—</span></td>
+<td class="px-5 md:px-8 py-5 text-right"><a href="#dt" class="glass hover:bg-pr text-pr hover:text-white text-xs font-bold px-4 py-2 rounded-lg transition-all">Thuê</a></td>
+</tr>
+<tr class="border-b border-white/5 hover:bg-white/[.02] transition-colors">
+<td class="px-5 md:px-8 py-5 font-bold text-lg">2 ngày</td>
+<td class="px-5 md:px-8 py-5 text-right"><span class="text-2xl font-black gr">180K</span><span class="text-gray-500 text-sm">/ngày</span></td>
+<td class="px-5 md:px-8 py-5 text-right hidden sm:table-cell"><span class="text-emerald-400 text-sm font-bold">-10%</span></td>
+<td class="px-5 md:px-8 py-5 text-right"><a href="#dt" class="glass hover:bg-pr text-pr hover:text-white text-xs font-bold px-4 py-2 rounded-lg transition-all">Thuê</a></td>
+</tr>
+<tr class="border-b border-white/5 relative bg-pr/[.04] hover:bg-pr/[.08] transition-colors">
+<td class="px-5 md:px-8 py-5 font-bold text-lg">3 ngày <span class="inline-block ml-2 bg-gradient-to-r from-pr to-blue-400 text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full align-middle">⭐ BEST</span></td>
+<td class="px-5 md:px-8 py-5 text-right"><span class="text-2xl font-black gr">160K</span><span class="text-gray-500 text-sm">/ngày</span></td>
+<td class="px-5 md:px-8 py-5 text-right hidden sm:table-cell"><span class="text-emerald-400 text-sm font-bold">-20%</span></td>
+<td class="px-5 md:px-8 py-5 text-right"><a href="#dt" class="bg-pr hover:bg-pr-d text-white text-xs font-bold px-4 py-2 rounded-lg transition-all shadow-lg shadow-pr/20">Thuê ngay</a></td>
+</tr>
+<tr class="border-b border-white/5 hover:bg-white/[.02] transition-colors">
+<td class="px-5 md:px-8 py-5 font-bold text-lg">5 ngày</td>
+<td class="px-5 md:px-8 py-5 text-right"><span class="text-2xl font-black gr">140K</span><span class="text-gray-500 text-sm">/ngày</span></td>
+<td class="px-5 md:px-8 py-5 text-right hidden sm:table-cell"><span class="text-emerald-400 text-sm font-bold">-30%</span></td>
+<td class="px-5 md:px-8 py-5 text-right"><a href="#dt" class="glass hover:bg-pr text-pr hover:text-white text-xs font-bold px-4 py-2 rounded-lg transition-all">Thuê</a></td>
+</tr>
+<tr class="hover:bg-white/[.02] transition-colors">
+<td class="px-5 md:px-8 py-5 font-bold text-lg">7 ngày</td>
+<td class="px-5 md:px-8 py-5 text-right"><span class="text-2xl font-black gr">130K</span><span class="text-gray-500 text-sm">/ngày</span></td>
+<td class="px-5 md:px-8 py-5 text-right hidden sm:table-cell"><span class="text-emerald-400 text-sm font-bold">-35%</span></td>
+<td class="px-5 md:px-8 py-5 text-right"><a href="#dt" class="glass hover:bg-pr text-pr hover:text-white text-xs font-bold px-4 py-2 rounded-lg transition-all">Thuê</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p class="text-center text-xs text-gray-500 mt-6">Tất cả gói đều bao gồm: Máy DJI Pocket 3 + Thẻ nhớ + Hướng dẫn sử dụng. Gói 3 ngày trở lên tặng kèm pin dự phòng.</p>
+</div></section>
 
 <!-- QUY TRÌNH -->
 <section id="qt" class="py-24 bg-dk2/50 relative overflow-hidden">
@@ -347,7 +391,7 @@
 <div><label for="phone" class="block text-sm font-semibold text-gray-300 mb-2">Số điện thoại <span class="text-red-400">*</span></label><input type="tel" id="phone" name="phone" required placeholder="0942 783 802" class="w-full bg-dk border border-gray-700/50 focus:border-pr focus:ring-2 focus:ring-pr/20 rounded-xl px-5 py-3.5 text-white placeholder-gray-600 outline-none transition-all"></div>
 <div class="grid grid-cols-2 gap-4">
 <div><label for="date" class="block text-sm font-semibold text-gray-300 mb-2">Ngày thuê <span class="text-red-400">*</span></label><input type="date" id="date" name="date" required class="w-full bg-dk border border-gray-700/50 focus:border-pr focus:ring-2 focus:ring-pr/20 rounded-xl px-5 py-3.5 text-white outline-none transition-all"></div>
-<div><label for="product" class="block text-sm font-semibold text-gray-300 mb-2">Sản phẩm <span class="text-red-400">*</span></label><select id="product" name="product" required class="w-full bg-dk border border-gray-700/50 focus:border-pr focus:ring-2 focus:ring-pr/20 rounded-xl px-5 py-3.5 text-white outline-none transition-all"><option value="">Chọn...</option><option>Pocket 3 — 1 ngày (200K)</option><option>Pocket 3 — 3 ngày (550K) ⭐</option><option>Pocket 3 — 7 ngày (1.2TR)</option><option>Máy ảnh Sony/Canon</option><option>Phụ kiện</option><option>Khác</option></select></div></div>
+<div><label for="product" class="block text-sm font-semibold text-gray-300 mb-2">Sản phẩm <span class="text-red-400">*</span></label><select id="product" name="product" required class="w-full bg-dk border border-gray-700/50 focus:border-pr focus:ring-2 focus:ring-pr/20 rounded-xl px-5 py-3.5 text-white outline-none transition-all"><option value="">Chọn...</option><option>Pocket 3 — 1 ngày (200K)</option><option>Pocket 3 — 2 ngày (180K/ngày)</option><option>Pocket 3 — 3 ngày (160K/ngày) ⭐</option><option>Pocket 3 — 5 ngày (140K/ngày)</option><option>Pocket 3 — 7 ngày (130K/ngày)</option><option>Máy ảnh Sony/Canon</option><option>Phụ kiện</option><option>Khác</option></select></div></div>
 <div><label for="note" class="block text-sm font-semibold text-gray-300 mb-2">Ghi chú</label><textarea id="note" name="note" rows="3" placeholder="Cần thêm tripod, giao buổi sáng..." class="w-full bg-dk border border-gray-700/50 focus:border-pr focus:ring-2 focus:ring-pr/20 rounded-xl px-5 py-3.5 text-white placeholder-gray-600 outline-none transition-all resize-none"></textarea></div>
 <button type="submit" class="w-full bg-pr hover:bg-pr-d text-white font-bold py-4 rounded-xl text-lg transition-all gl hover:shadow-2xl hover:shadow-pr/30">📸 Gửi yêu cầu thuê</button>
 <p class="text-xs text-gray-500 text-center">Gửi form = đồng ý để SNAPTIFY liên hệ qua SĐT.</p>
@@ -381,6 +425,8 @@ const ob=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.
 document.querySelectorAll('.rv').forEach(el=>ob.observe(el));
 // Fallback: reveal all after 3s in case observer misses
 setTimeout(()=>document.querySelectorAll('.rv:not(.v)').forEach(el=>el.classList.add('v')),3500);
+// Remove rv from non-heading elements to prevent blank flash on fast scroll
+document.querySelectorAll('.rv').forEach(el=>{if(!el.querySelector('h2')&&!el.querySelector('h1'))el.classList.remove('rv')});
 const d=document.getElementById('date');if(d)d.min=new Date().toISOString().split('T')[0];
 document.addEventListener('mousemove',e=>{const x=(e.clientX/innerWidth-.5)*15,y=(e.clientY/innerHeight-.5)*15;document.querySelectorAll('.fl').forEach((el,i)=>{const s=(i%4+1)*.2;el.style.transform=`translateY(${Math.sin(Date.now()/1000+i)*14}px) translate(${x*s}px,${y*s}px)`})});
 
