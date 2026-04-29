@@ -64,7 +64,7 @@
 @keyframes dotBounce{0%,60%,100%{transform:translateY(0)}30%{transform:translateY(-4px)}}
 
 /* === AURORA BACKGROUND === */
-.aurora{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+.aurora{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden;background:#0A0F1C}
 .aurora-blob{position:absolute;border-radius:50%;filter:blur(80px);opacity:.07;animation:auroraMove 12s ease-in-out infinite alternate}
 .aurora-blob:nth-child(1){width:600px;height:600px;background:#2563EB;top:-10%;left:-5%}
 .aurora-blob:nth-child(2){width:500px;height:500px;background:#38BDF8;bottom:-10%;right:-5%;animation-delay:3s;animation-duration:15s}
@@ -210,7 +210,7 @@
 </section>
 
 <!-- SẢN PHẨM — Tab Showcase -->
-<section id="sp" class="py-24 relative">
+<section id="sp" class="py-24 relative bg-dk">
 <div class="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-pr/20 to-transparent"></div>
 <div class="max-w-7xl mx-auto px-4 sm:px-6">
 <div class="text-center mb-12 rv"><p class="text-pr text-sm font-bold uppercase tracking-widest mb-3">Thiết bị cho thuê</p><h2 class="text-3xl md:text-5xl font-black mb-5">Sản phẩm <span class="gr">chính hãng</span></h2><p class="text-gray-400 max-w-xl mx-auto text-lg">Bảo dưỡng định kỳ, sẵn sàng giao ngay tại Hà Nội</p></div>
@@ -301,7 +301,7 @@
 </div></div></section>
 
 <!-- BẢNG GIÁ -->
-<section id="bg" class="py-24 relative">
+<section id="bg" class="py-24 relative bg-dk">
 <div class="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-pr/20 to-transparent"></div>
 <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-pr/[.04] rounded-full blur-[120px]"></div>
 <div class="max-w-4xl mx-auto px-4 sm:px-6 relative z-10">
@@ -369,7 +369,7 @@
 </div></div></section>
 
 <!-- ĐÁNH GIÁ -->
-<section id="dg" class="py-24 relative">
+<section id="dg" class="py-24 relative bg-dk">
 <div class="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-pr/20 to-transparent"></div>
 <div class="max-w-7xl mx-auto px-4 sm:px-6">
 <div class="text-center mb-16 rv"><p class="text-pr text-sm font-bold uppercase tracking-widest mb-3">Feedback</p><h2 class="text-3xl md:text-5xl font-black mb-5">Khách hàng <span class="gr">nói gì?</span></h2><p class="text-gray-400 text-lg">128+ khách hàng đã tin tưởng SNAPTIFY</p></div>
@@ -388,7 +388,7 @@
 <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="glass rounded-2xl p-7 md:p-10 space-y-6 rv">
 <div><label for="name" class="block text-sm font-semibold text-gray-300 mb-2">Họ và tên <span class="text-red-400">*</span></label><input type="text" id="name" name="name" required placeholder="Nguyễn Văn A" class="w-full bg-dk border border-gray-700/50 focus:border-pr focus:ring-2 focus:ring-pr/20 rounded-xl px-5 py-3.5 text-white placeholder-gray-600 outline-none transition-all"></div>
 <div><label for="phone" class="block text-sm font-semibold text-gray-300 mb-2">Số điện thoại <span class="text-red-400">*</span></label><input type="tel" id="phone" name="phone" required placeholder="0942 783 802" class="w-full bg-dk border border-gray-700/50 focus:border-pr focus:ring-2 focus:ring-pr/20 rounded-xl px-5 py-3.5 text-white placeholder-gray-600 outline-none transition-all"></div>
-<div class="grid grid-cols-2 gap-4">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
 <div><label for="date" class="block text-sm font-semibold text-gray-300 mb-2">Ngày thuê <span class="text-red-400">*</span></label><input type="date" id="date" name="date" required class="w-full bg-dk border border-gray-700/50 focus:border-pr focus:ring-2 focus:ring-pr/20 rounded-xl px-5 py-3.5 text-white outline-none transition-all"></div>
 <div><label for="product" class="block text-sm font-semibold text-gray-300 mb-2">Sản phẩm <span class="text-red-400">*</span></label><select id="product" name="product" required class="w-full bg-dk border border-gray-700/50 focus:border-pr focus:ring-2 focus:ring-pr/20 rounded-xl px-5 py-3.5 text-white outline-none transition-all"><option value="">Chọn...</option><option>Pocket 3 — 1 ngày (200K)</option><option>Pocket 3 — 2 ngày (180K/ngày)</option><option>Pocket 3 — 3 ngày (160K/ngày) ⭐</option><option>Pocket 3 — 5 ngày (140K/ngày)</option><option>Pocket 3 — 7 ngày (130K/ngày)</option><option>Máy ảnh Sony/Canon</option><option>Phụ kiện</option><option>Khác</option></select></div></div>
 <div><label for="note" class="block text-sm font-semibold text-gray-300 mb-2">Ghi chú</label><textarea id="note" name="note" rows="3" placeholder="Cần thêm tripod, giao buổi sáng..." class="w-full bg-dk border border-gray-700/50 focus:border-pr focus:ring-2 focus:ring-pr/20 rounded-xl px-5 py-3.5 text-white placeholder-gray-600 outline-none transition-all resize-none"></textarea></div>
