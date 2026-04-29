@@ -110,8 +110,7 @@
 .gr{background:linear-gradient(135deg,#2563EB,#38BDF8,#818CF8);background-size:200% 200%;animation:grad 4s ease infinite;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 .cd{transition:all .4s cubic-bezier(.25,.8,.25,1)}.cd:hover{transform:translateY(-8px);box-shadow:0 30px 60px rgba(37,99,235,.2)}
 .th{cursor:pointer;border:2px solid transparent;opacity:.5;transition:all .3s}.th:hover,.th.on{border-color:#2563EB;opacity:1;transform:scale(1.05)}
-.rv{opacity:1;transform:none;transition:all .6s cubic-bezier(.25,.8,.25,1)}.rv.v{animation:rvIn .6s ease forwards}
-@keyframes rvIn{from{opacity:.7;transform:translateY(15px)}to{opacity:1;transform:none}}
+.rv{opacity:1;transform:none}
 .d1{animation-delay:.1s}.d2{animation-delay:.2s}.d3{animation-delay:.3s}.d4{animation-delay:.4s}
 .sb{position:fixed;bottom:0;left:0;right:0;z-index:50;padding:14px 16px;background:linear-gradient(to top,rgba(10,15,28,.98),rgba(10,15,28,.8));backdrop-filter:blur(16px);border-top:1px solid rgba(37,99,235,.15)}
 #lb{position:fixed;inset:0;z-index:70;background:rgba(0,0,0,.95);backdrop-filter:blur(12px);display:none;align-items:center;justify-content:center;cursor:zoom-out}
@@ -309,46 +308,46 @@
 <div class="text-center mb-16 rv"><p class="text-pr text-sm font-bold uppercase tracking-widest mb-3">Bảng giá</p><h2 class="text-3xl md:text-5xl font-black mb-5">Thuê <span class="gr">DJI Pocket 3</span></h2><p class="text-gray-400 text-lg">Thuê càng lâu, giá càng tốt. Miễn phí giao nhận nội thành.</p></div>
 
 <!-- Pricing Table -->
-<div class="glass rounded-2xl overflow-hidden">
-<table class="w-full text-left">
+<div class="glass rounded-2xl overflow-hidden overflow-x-auto">
+<table class="w-full text-left min-w-0">
 <thead>
 <tr class="border-b border-white/5">
-<th class="px-5 md:px-8 py-5 text-xs font-bold text-gray-400 uppercase tracking-widest">Thời gian</th>
-<th class="px-5 md:px-8 py-5 text-xs font-bold text-gray-400 uppercase tracking-widest text-right">Giá / ngày</th>
-<th class="px-5 md:px-8 py-5 text-xs font-bold text-gray-400 uppercase tracking-widest text-right hidden sm:table-cell">Tiết kiệm</th>
-<th class="px-5 md:px-8 py-5"></th>
+<th class="px-4 md:px-8 py-4 text-xs font-bold text-gray-400 uppercase tracking-widest">Gói</th>
+<th class="px-4 md:px-8 py-4 text-xs font-bold text-gray-400 uppercase tracking-widest text-right">Giá/ngày</th>
+<th class="px-4 md:px-8 py-4 text-xs font-bold text-gray-400 uppercase tracking-widest text-right hidden sm:table-cell">Giảm</th>
+<th class="px-3 md:px-8 py-4"></th>
 </tr>
 </thead>
 <tbody>
 <tr class="border-b border-white/5 hover:bg-white/[.02] transition-colors">
-<td class="px-5 md:px-8 py-5 font-bold text-lg">1 ngày</td>
-<td class="px-5 md:px-8 py-5 text-right"><span class="text-2xl font-black gr">200K</span><span class="text-gray-500 text-sm">/ngày</span></td>
-<td class="px-5 md:px-8 py-5 text-right hidden sm:table-cell"><span class="text-gray-600 text-sm">—</span></td>
-<td class="px-5 md:px-8 py-5 text-right"><a href="#dt" class="glass hover:bg-pr text-pr hover:text-white text-xs font-bold px-4 py-2 rounded-lg transition-all">Thuê</a></td>
+<td class="px-4 md:px-8 py-4 font-bold">1 ngày</td>
+<td class="px-4 md:px-8 py-4 text-right"><span class="text-xl md:text-2xl font-black gr">200K</span></td>
+<td class="px-4 md:px-8 py-4 text-right hidden sm:table-cell text-gray-600 text-sm">—</td>
+<td class="px-3 md:px-8 py-4 text-right"><a href="#dt" class="glass hover:bg-pr text-pr hover:text-white text-[11px] md:text-xs font-bold px-3 md:px-4 py-1.5 md:py-2 rounded-lg transition-all whitespace-nowrap">Thuê</a></td>
 </tr>
 <tr class="border-b border-white/5 hover:bg-white/[.02] transition-colors">
-<td class="px-5 md:px-8 py-5 font-bold text-lg">2 ngày</td>
-<td class="px-5 md:px-8 py-5 text-right"><span class="text-2xl font-black gr">180K</span><span class="text-gray-500 text-sm">/ngày</span></td>
-<td class="px-5 md:px-8 py-5 text-right hidden sm:table-cell"><span class="text-emerald-400 text-sm font-bold">-10%</span></td>
-<td class="px-5 md:px-8 py-5 text-right"><a href="#dt" class="glass hover:bg-pr text-pr hover:text-white text-xs font-bold px-4 py-2 rounded-lg transition-all">Thuê</a></td>
+<td class="px-4 md:px-8 py-4 font-bold">2 ngày</td>
+<td class="px-4 md:px-8 py-4 text-right"><span class="text-xl md:text-2xl font-black gr">180K</span></td>
+<td class="px-4 md:px-8 py-4 text-right hidden sm:table-cell text-emerald-400 text-sm font-bold">-10%</td>
+<td class="px-3 md:px-8 py-4 text-right"><a href="#dt" class="glass hover:bg-pr text-pr hover:text-white text-[11px] md:text-xs font-bold px-3 md:px-4 py-1.5 md:py-2 rounded-lg transition-all whitespace-nowrap">Thuê</a></td>
 </tr>
 <tr class="border-b border-white/5 relative bg-pr/[.04] hover:bg-pr/[.08] transition-colors">
-<td class="px-5 md:px-8 py-5 font-bold text-lg">3 ngày <span class="inline-block ml-2 bg-gradient-to-r from-pr to-blue-400 text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full align-middle">⭐ BEST</span></td>
-<td class="px-5 md:px-8 py-5 text-right"><span class="text-2xl font-black gr">160K</span><span class="text-gray-500 text-sm">/ngày</span></td>
-<td class="px-5 md:px-8 py-5 text-right hidden sm:table-cell"><span class="text-emerald-400 text-sm font-bold">-20%</span></td>
-<td class="px-5 md:px-8 py-5 text-right"><a href="#dt" class="bg-pr hover:bg-pr-d text-white text-xs font-bold px-4 py-2 rounded-lg transition-all shadow-lg shadow-pr/20">Thuê ngay</a></td>
+<td class="px-4 md:px-8 py-4 font-bold">3 ngày <span class="inline-block ml-1 bg-gradient-to-r from-pr to-blue-400 text-white text-[9px] md:text-[10px] font-bold px-2 py-0.5 rounded-full align-middle">⭐ BEST</span></td>
+<td class="px-4 md:px-8 py-4 text-right"><span class="text-xl md:text-2xl font-black gr">160K</span></td>
+<td class="px-4 md:px-8 py-4 text-right hidden sm:table-cell text-emerald-400 text-sm font-bold">-20%</td>
+<td class="px-3 md:px-8 py-4 text-right"><a href="#dt" class="bg-pr hover:bg-pr-d text-white text-[11px] md:text-xs font-bold px-3 md:px-4 py-1.5 md:py-2 rounded-lg transition-all shadow-lg shadow-pr/20 whitespace-nowrap">Thuê</a></td>
 </tr>
 <tr class="border-b border-white/5 hover:bg-white/[.02] transition-colors">
-<td class="px-5 md:px-8 py-5 font-bold text-lg">5 ngày</td>
-<td class="px-5 md:px-8 py-5 text-right"><span class="text-2xl font-black gr">140K</span><span class="text-gray-500 text-sm">/ngày</span></td>
-<td class="px-5 md:px-8 py-5 text-right hidden sm:table-cell"><span class="text-emerald-400 text-sm font-bold">-30%</span></td>
-<td class="px-5 md:px-8 py-5 text-right"><a href="#dt" class="glass hover:bg-pr text-pr hover:text-white text-xs font-bold px-4 py-2 rounded-lg transition-all">Thuê</a></td>
+<td class="px-4 md:px-8 py-4 font-bold">5 ngày</td>
+<td class="px-4 md:px-8 py-4 text-right"><span class="text-xl md:text-2xl font-black gr">140K</span></td>
+<td class="px-4 md:px-8 py-4 text-right hidden sm:table-cell text-emerald-400 text-sm font-bold">-30%</td>
+<td class="px-3 md:px-8 py-4 text-right"><a href="#dt" class="glass hover:bg-pr text-pr hover:text-white text-[11px] md:text-xs font-bold px-3 md:px-4 py-1.5 md:py-2 rounded-lg transition-all whitespace-nowrap">Thuê</a></td>
 </tr>
 <tr class="hover:bg-white/[.02] transition-colors">
-<td class="px-5 md:px-8 py-5 font-bold text-lg">7 ngày</td>
-<td class="px-5 md:px-8 py-5 text-right"><span class="text-2xl font-black gr">130K</span><span class="text-gray-500 text-sm">/ngày</span></td>
-<td class="px-5 md:px-8 py-5 text-right hidden sm:table-cell"><span class="text-emerald-400 text-sm font-bold">-35%</span></td>
-<td class="px-5 md:px-8 py-5 text-right"><a href="#dt" class="glass hover:bg-pr text-pr hover:text-white text-xs font-bold px-4 py-2 rounded-lg transition-all">Thuê</a></td>
+<td class="px-4 md:px-8 py-4 font-bold">7 ngày</td>
+<td class="px-4 md:px-8 py-4 text-right"><span class="text-xl md:text-2xl font-black gr">130K</span></td>
+<td class="px-4 md:px-8 py-4 text-right hidden sm:table-cell text-emerald-400 text-sm font-bold">-35%</td>
+<td class="px-3 md:px-8 py-4 text-right"><a href="#dt" class="glass hover:bg-pr text-pr hover:text-white text-[11px] md:text-xs font-bold px-3 md:px-4 py-1.5 md:py-2 rounded-lg transition-all whitespace-nowrap">Thuê</a></td>
 </tr>
 </tbody>
 </table>
@@ -421,12 +420,6 @@ function showTab(idx){document.querySelectorAll('.ptab').forEach((t,i)=>{t.class
 document.getElementById('mt').addEventListener('click',()=>document.getElementById('mm').classList.toggle('hidden'));
 document.querySelectorAll('#mm a').forEach(a=>a.addEventListener('click',()=>document.getElementById('mm').classList.add('hidden')));
 const hd=document.getElementById('hd');window.addEventListener('scroll',()=>{if(scrollY>60){hd.style.background='rgba(10,15,28,.92)';hd.style.backdropFilter='blur(16px)';hd.style.borderBottom='1px solid rgba(37,99,235,.08)'}else{hd.style.background='transparent';hd.style.backdropFilter='none';hd.style.borderBottom='none'}});
-const ob=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('v')}),{threshold:0.01,rootMargin:'0px 0px -20px 0px'});
-document.querySelectorAll('.rv').forEach(el=>ob.observe(el));
-// Fallback: reveal all after 3s in case observer misses
-setTimeout(()=>document.querySelectorAll('.rv:not(.v)').forEach(el=>el.classList.add('v')),3500);
-// Remove rv from non-heading elements to prevent blank flash on fast scroll
-document.querySelectorAll('.rv').forEach(el=>{if(!el.querySelector('h2')&&!el.querySelector('h1'))el.classList.remove('rv')});
 const d=document.getElementById('date');if(d)d.min=new Date().toISOString().split('T')[0];
 document.addEventListener('mousemove',e=>{const x=(e.clientX/innerWidth-.5)*15,y=(e.clientY/innerHeight-.5)*15;document.querySelectorAll('.fl').forEach((el,i)=>{const s=(i%4+1)*.2;el.style.transform=`translateY(${Math.sin(Date.now()/1000+i)*14}px) translate(${x*s}px,${y*s}px)`})});
 
